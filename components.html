@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компоненты</title>
+    <link rel="stylesheet" href="./css/choices.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/choices.min.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="" class="default-link">Ссылка</a>
+        <button class="default-label">Товар недели</button>
+        <h1 class="default-title">Популярные товары</h1>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="" class="menu__link">
+                        Акции
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">
+                        Популярное
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">
+                        Новинки
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <article class="product-card">
+            <div class="product-card__content">
+                <ul class="product-card__top">
+                    <li class="product-card__buttons">
+                        <ul class="product-card__list">
+                            <li class="default-label default-label-discount product-card__item">-20%</li>
+                            <li class="default-label default-label-week product-card__item">Товар недели</li>
+                        </ul>
+                    </li>
+                    <li class="product-card__icons">
+                        <ul class="product-card__list">
+                            <li class="default-svg product-card__item">
+                                <svg class="product-card__rate">
+                                    <use xlink:href="./img/sprite.svg#card-rate"></use>
+                                </svg>
+                            </li>
+                            <li class="default-svg product-card__item">
+                                <svg class="product-card__heart">
+                                    <use xlink:href="./img/sprite.svg#card-heart"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <img class="product-card__img" src="./img/card1.png" alt="Доска SUP надувная Aqua Marina 10'4">
+                <h3 class="product-card__title">
+                    Доска SUP надувная Aqua Marina 10'4"
+                </h3>
+                <ul class="product-card__bottom">
+                    <li class="product-card__prices">
+                        <ul class="product-card__list">
+                            <li class="product-card__item">
+                                <strong class="default-price product-card__price">29 990 ₽</strong>
+                            </li>
+                            <li class="product-card__item">
+                                <strong class="default-price-old product-card__price_old">38 900 ₽</strong>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="product-card__stars">
+                        <ul class="product-card__list">
+                            <li class="default-svg product-card__item">
+                                <svg class="product-card__star">
+                                    <use xlink:href="./img/sprite.svg#card-star"></use>
+                                </svg>
+                            </li>
+                            <li class="product-card__item">
+                                <strong class="default-star-digital">4.5</strong>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="product-card__hover">
+                <li class="product-card__select">
+                    <select class="product-card__select-item" name="select">
+                        <option value="">Комплектация</option>
+                        <option value="option1">Опция 1</option>
+                        <option value="option2">Опция 2</option>
+                        <option value="option3">Опция 3</option>
+                    </select>
+                </li>
+                <li class="product-card__btn">
+                    <button type="button">В корзину</button>
+                </li>
+            </ul>
+        </article>
+        
+    </div>
+
+</body>
+
+</html>

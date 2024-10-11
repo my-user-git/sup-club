@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'CirceRoundedRegular3';
+    src: url('../fonts/CirceRounded-Regular3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CirceRoundedRegular4';
+    src: url('../fonts/CirceRounded-Regular4.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CirceRoundedRegular5';
+    src: url('../fonts/CirceRounded-Regular5.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
