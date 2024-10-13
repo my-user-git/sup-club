@@ -29,6 +29,7 @@
     box-sizing: border-box;
 }
 
+
 *,
 ::before,
 ::after {
@@ -64,9 +65,127 @@ p {
 /* Контейнер */
 
 .container {
+    position: relative;
     max-width: 1369px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+/* roman */
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 60px auto;
+    flex-wrap: wrap;
+}
+
+.roman-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+
+    &__open {
+        display: flex;
+    }
+
+    &__modal {
+        width: 45%;
+        margin: 0 auto;
+        background-color: var(--default-white);
+    }
+}
+
+.calc {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.box {
+    box-shadow: 0 0 3px #000;
+}
+
+.field-group,
+.output {
+    display: inline-flex;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    &__input {
+        text-transform: uppercase;
+    }
+}
+
+.output {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #eee;
+    min-height: 100px;
+    margin: 15px 0;
+    font-size: 2.2em;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 2em;
+    border: 1px solid #000;
+}
+
+.btn,
+.roman-btn {
+    font-size: 1.8em;
+    cursor: pointer;
+    border: 1px solid red;
+    padding: 10px 15px;
+    background-color: var(--orange);
+    box-shadow: 0 0 3px;
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+.btn:hover,
+.header__roman:hover {
+    color: #000;
+}
+
+.rows {
+    display: inline-flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.rows>span {
+    flex: 1 1 50%;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.explanation {
+    width: 100%;
+
+    & li {
+        text-align: center;
+    }
 }
 
 /* Default */

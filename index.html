@@ -12,12 +12,34 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/choices.min.js" defer></script>
     <script src="./js/scripts.js" defer></script>
+    <script src="./js/roman.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <div class="container header__content">
             <h1 class="default-title header__title">Популярные товары</h1>
+            <button class="roman-btn" type="button">Convert Roman To Integer</button>
+            <div class="wrapper roman-content">
+                <div class="roman-content__modal">
+                    <!-- Converter -->
+                    <form class="calc box" id="form">
+                        <h1>Convert Roman To Integer</h1>
+
+                        <!-- Input area -->
+                        <div class="field-group">
+                            <input class="field-group__input" type="text" name="conversion-input" />
+                        </div>
+
+                        <!-- Button -->
+                        <span class="btn">Convert</span>
+
+                        <!-- Output area -->
+                        <p class="output"></p>
+                        <ul class="explanation"></ul>
+                    </form>
+                </div>
+            </div>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
