@@ -24,6 +24,7 @@ const convertRomanToInteger = () => {
         return false;
     }
 
+
     //sequence of roman letters
     let arr = ["I", "V", "X", "L", "C", "D", "M"];
 
@@ -44,7 +45,7 @@ const convertRomanToInteger = () => {
     let prevIndex = 0;
     console.log(roman)
 
-    for (let i = 0; i <= roman.length - 1; i++) {
+    for (let i = roman.length - 1; i >= 0; i--) {
         //if the current letter is having greater index than previous letter then add values
         if (arr.indexOf(roman[i]) >= prevIndex) {
             sum = sum + values[roman[i]];
@@ -61,7 +62,6 @@ const convertRomanToInteger = () => {
     }
 
     console.table(arrExplanation);
-
 
     //Add the result to the output area
     outputArea.innerHTML = sum;
@@ -80,7 +80,7 @@ const convertRomanToInteger = () => {
 
 //Calculate on convert button click
 convertButton.addEventListener("click", () => {
-    // calc();
+    outputArea.innerHTML = '';
     explanationArea.innerHTML = '';
     convertRomanToInteger();
 });
@@ -88,7 +88,6 @@ convertButton.addEventListener("click", () => {
 //Calculate when enter is pressed.
 window.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-        // calc();
         explanationArea.innerHTML = '';
         convertRomanToInteger();
     }
