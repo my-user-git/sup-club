@@ -96,6 +96,7 @@ window.addEventListener("keypress", (e) => {
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.roman-btn').addEventListener('click', function () {
         document.querySelector('.roman-content').classList.add('roman-content__open');
+        document.querySelector('.roman-content__modal').classList.add('animate__animated', 'animate__bounce');
         form.reset();
         explanationArea.innerHTML = '';
         outputArea.innerHTML = '';

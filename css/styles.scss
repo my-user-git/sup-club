@@ -24,6 +24,7 @@
 
     --transition-duration: .3s;
 }
+  
 
 * {
     box-sizing: border-box;
@@ -114,8 +115,10 @@ p {
         border-radius: 15px;
         background-color: var(--default-white);
         overflow: hidden;
+ 
     }
 }
+
 
 .calc {
     display: inline-flex;
