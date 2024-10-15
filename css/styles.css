@@ -114,6 +114,7 @@ p {
   padding: 25px;
 }
 .calc__title {
+  text-align: center;
   font-family: var(--font-title);
   line-height: 160%;
   font-size: 24px;
@@ -707,6 +708,13 @@ input[type=text] {
 }
 /* 1200 */
 @media (max-width: 1200px) {
+  .header__title {
+    margin: 0;
+  }
+  .header__content {
+    flex-direction: column;
+    row-gap: 5px;
+  }
   .product-card__content {
     padding: 15px;
   }
@@ -735,17 +743,39 @@ input[type=text] {
 }
 /* 992 */
 @media (max-width: 992px) {
+  .header__title {
+    line-height: 110%;
+    font-size: 30px;
+  }
+  .reasons__title {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    line-height: 110%;
+    font-size: 30px;
+  }
   .reasons__btn {
     text-align: left;
+    font-size: 16px;
+  }
+  .reasons__promo {
+    line-height: 150%;
+    font-size: 18px;
+  }
+  .roman-content__modal {
+    width: 55%;
+  }
+  .calc__title {
+    line-height: 110%;
+    font-size: 20px;
   }
 }
 /* 768 */
 @media (max-width: 768px) {
-  .header__content {
-    flex-direction: column;
-    row-gap: 5px;
-  }
   .reasons__wrap {
     padding: 50px 25px 50px 25px;
+  }
+  .roman-btn {
+    font-size: 1.2em;
   }
 }/*# sourceMappingURL=styles.css.map */

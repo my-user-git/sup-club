@@ -26,6 +26,17 @@
 /* 1200 */
 
 @media (max-width: 1200px) {
+    .header {
+        &__title {
+            margin: 0;
+        }
+
+        &__content {
+            flex-direction: column;
+            row-gap: 5px;
+        }
+    }
+
     .product-card {
         &__content {
             padding: 15px;
@@ -65,24 +76,57 @@
 /* 992 */
 
 @media (max-width: 992px) {
-  .reasons {
-    &__btn {
-        text-align: left;
+    .header {
+        &__title {
+            line-height: 110%;
+            font-size: 30px;
+        }
     }
-  }
+
+    .reasons {
+        &__title {
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+            line-height: 110%;
+            font-size: 30px;
+        }
+
+        &__btn {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        &__promo {
+            line-height: 150%;
+            font-size: 18px;
+        }
+    }
+
+    .roman-content {
+        &__modal {
+            width: 55%;
+        }
+    }
+
+    .calc__title {
+        line-height: 110%;
+        font-size: 20px;
+    }
 }
 
 /* 768 */
 
 @media (max-width: 768px) {
-    .header__content {
-        flex-direction: column;
-        row-gap: 5px;
-    }
-
     .reasons {
         &__wrap {
             padding: 50px 25px 50px 25px;
+        }
+    }
+
+    .roman {
+        &-btn {
+            font-size: 1.2em;
         }
     }
 }
