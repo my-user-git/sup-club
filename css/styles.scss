@@ -24,7 +24,7 @@
 
     --transition-duration: .3s;
 }
-  
+
 
 * {
     box-sizing: border-box;
@@ -115,7 +115,7 @@ p {
         border-radius: 15px;
         background-color: var(--default-white);
         overflow: hidden;
- 
+
     }
 }
 
@@ -199,6 +199,7 @@ input[type="text"] {
 }
 
 .btn:hover,
+.roman-btn:hover,
 .header__roman:hover {
     color: #000;
 }
